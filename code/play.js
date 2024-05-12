@@ -1,13 +1,13 @@
 inlets = 2;
-outlets = 5;
+outlets = 6;
 
 var user_choice, instrument, index;
 var state = 0;
-var solution = [5, 6, 5, 4, 3, 2, 1, 0];
+var solution = [5, 3, 1, 4, 7, 2, 6, 0];
 var progress = [-1, -1, -1, -1, -1, -1, -1, -1];
 var color_map = [56, 10, 13, 20, 33, 45, 48, 69];
 var prev = [-1, -1, -1, -1, -1, -1, -1, -1];
-
+var isPlayed = [-1,-1,-1,-1,-1,-1,-1,-1];
 
 //state 3 variables
 var size = 8;
@@ -27,8 +27,8 @@ function msg_int(input) {
 
 	if (this.inlet == 1) {
 		index = input;
-		user_choice = Math.floor(index / 10) - 1;
-		instrument = index % 10 - 1;
+		user_choice = index % 10 - 1;
+		instrument = Math.floor(index / 10) - 1;
 
 		if (state == 0) {
 			state = 1;
@@ -38,9 +38,10 @@ function msg_int(input) {
 	if (state == 0) {
 		colorState0();
 		progress = [-1, -1, -1, -1, -1, -1, -1, -1];
+		isPlayed = [-1,-1,-1,-1,-1,-1,-1,-1];
 		user_choice = -1;
 		instrument = -1;
-		var sum = progress.reduce(add, 0);
+		outlet(5, "sum", 0);
 	}
 	else if (state == 1 && user_choice >= 0 && instrument >= 0) {
 
@@ -53,6 +54,7 @@ function msg_int(input) {
 			progress[instrument] = -1;
 			user_choice = -1;
 			instrument = -1;
+			outlet(5, "sum", 9);
 		} else {
 			colorCorrect(index, 21);
 			progress[instrument] = 0;
@@ -60,8 +62,10 @@ function msg_int(input) {
 			instrument = -1;
 			//if progress is complete we go into final mode
 			var sum = progress.reduce(add, 0);
+			outlet(5, "sum", size + sum);
 			if (sum == 0) {
 				state = 3;
+				outlet(5, "sum", 10);
 			}
 		}
 		outlet(0, "state", state);
@@ -69,7 +73,7 @@ function msg_int(input) {
 			colorState3();
 		}
 		else {
-			outlet(1, "loop", index);
+			//outlet(1, "loop", index);
 		}
 	} else if (state == 2) {
 		outlet(0, "state", 1);
@@ -82,21 +86,43 @@ function add(accumulator, a) {
 
 // Coloring functions
 function colorCorrect(index, color_code) {
-	uncolorPrev(index);
-	outlet(2, "index", index);
-	outlet(3, "color", color_code);
-	outlet(4, "channel", 1);
+	var position = Math.floor(index / 10) - 1;
+	if(prev[position] == index && isPlayed[position] != -1){
+		outlet(2, "index", index);
+		outlet(3, "color", color_map[position]);
+		outlet(4, "channel", 1);
+		isPlayed[position] = -1;
+		outlet(1, "loop", Math.floor(index/10)*10);
+	}else{
+		uncolorPrev(index);
+		outlet(2, "index", index);
+		outlet(3, "color", color_code);
+		outlet(4, "channel", 1);
+		isPlayed[position] = 0;
+		outlet(1, "loop", index);
+	}
 }
 
 function colorWrong(index, color_code) {
-	uncolorPrev(index);
-	outlet(2, "index", index);
-	outlet(3, "color", color_code);
-	outlet(4, "channel", 1);
+	var position = Math.floor(index / 10) - 1;
+	if(prev[position] == index && isPlayed[position] != -1){
+		outlet(2, "index", index);
+		outlet(3, "color", color_map[position]);
+		outlet(4, "channel", 1);
+		isPlayed[position] = -1;
+		outlet(1, "loop", Math.floor(index/10)*10);
+	}else{
+		uncolorPrev(index);
+		outlet(2, "index", index);
+		outlet(3, "color", color_code);
+		outlet(4, "channel", 1);
+		isPlayed[position] = 0;
+		outlet(1, "loop", index);
+	}
 }
 
 function uncolorPrev(index) {
-	var position = index % 10 - 1;
+	var position = Math.floor(index / 10) - 1;
 
 	//reset color of the previously colored button from that column if it exists
 	if (prev[position] != -1) {
@@ -112,7 +138,7 @@ function colorState0() {
 	outlet(1, "loop", 0);
 	for (i = 1; i <= 8; i++) {
 		for (j = 1; j <= 8; j++) {
-			var index = i * 10 + j;
+			var index = j * 10 + i;
 			outlet(2, "index", index);
 			outlet(3, "color", color_map[j - 1]);
 			outlet(4, "channel", 3);
@@ -122,10 +148,17 @@ function colorState0() {
 
 function colorState3() {
 	outlet(1, "loop", 0);
-	spiralTraversal(8);
+	spiralTraversal();
 }
 
 function spiralTraversal() {
+	num=1;
+	row = 0;
+	col = 0;
+	prevRow = 0;
+	prevCol = 0;
+	lastRow = size;
+	lastCol = size;
 	var interval = new Task(doSpiralTraversal, this);
 	interval.interval = 50;
 	interval.repeat(size * size + 1);
@@ -157,7 +190,6 @@ function doSpiralTraversal() {
 		}
 
 		num++;
-		colorIndex = (colorIndex + 1) % color_map.length;
 	} else {
 		for (i = 0; i <= happyFace.length; i++) {
 			outlet(2, "index", happyFace[i]);

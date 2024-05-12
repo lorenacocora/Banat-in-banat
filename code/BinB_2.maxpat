@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 85.0, 1550.0, 921.0 ],
+		"rect" : [ 803.0, 85.0, 733.0, 697.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -26,7 +26,7 @@
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
 		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
+		"toolbars_unpinned_last_save" : 4,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -40,12 +40,120 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-81",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 428.749997317790985, 11.5, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"patching_rect" : [ 491.749997317790985, 134.0, 32.0, 22.0 ],
+					"text" : "t 0 b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-79",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 446.749997317790985, 110.0, 34.0, 22.0 ],
+					"text" : "sel 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-78",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 534.749997317790871, 141.0, 50.0, 22.0 ],
+					"text" : "77"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 446.749997317790985, 82.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-74",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"patching_rect" : [ 547.749997317790985, 107.0, 29.5, 22.0 ],
+					"text" : "t i b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 4,
+					"outlettype" : [ "int", "", "", "int" ],
+					"patching_rect" : [ 299.735077202320099, 96.044774651527405, 61.0, 22.0 ],
+					"text" : "counter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 547.749997317790985, 71.0, 32.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 650.0, 55.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 353.749997317790985, 49.0, 70.0, 22.0 ],
+					"patching_rect" : [ 353.749997317790985, 157.0, 70.0, 22.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -57,7 +165,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 876.749997317790985, 99.0, 62.0, 22.0 ],
+					"patching_rect" : [ 766.813827455043793, 177.0, 62.0, 22.0 ],
 					"text" : "route sum"
 				}
 
@@ -70,7 +178,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 876.749997317790985, 142.0, 50.0, 22.0 ]
+					"patching_rect" : [ 766.813827455043793, 220.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -81,8 +189,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 876.749997317790985, 183.0, 90.0, 22.0 ],
-					"text" : "serial g 115200"
+					"patching_rect" : [ 766.813827455043793, 257.929997735023449, 89.0, 22.0 ],
+					"text" : "serial c 115200"
 				}
 
 			}
@@ -115,7 +223,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.749997317790985, 218.5, 105.0, 48.0 ],
+					"patching_rect" : [ 489.749997317790985, 327.5, 105.0, 48.0 ],
 					"text" : "<- dublu click pentru acces la melodii"
 				}
 
@@ -127,7 +235,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 632.749997317790985, 165.0, 105.0, 48.0 ],
+					"patching_rect" : [ 632.749997317790985, 274.0, 105.0, 48.0 ],
 					"text" : "<- dublu click pentru acces la semnale"
 				}
 
@@ -149,7 +257,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -31958.0, -31915.0, 1852.0, 921.0 ],
+						"rect" : [ 42.0, 85.0, 1852.0, 921.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -178,6 +286,214 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-41",
+									"lastchannelcount" : 0,
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 436.0, 658.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~[7]",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~[7]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-40",
+									"lastchannelcount" : 0,
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 620.763341277709515, 658.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~[6]",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~[6]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"lastchannelcount" : 0,
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 759.035713106393814, 658.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~[5]",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~[5]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-37",
+									"lastchannelcount" : 0,
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 904.763341277709515, 658.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~[4]",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~[4]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"lastchannelcount" : 0,
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 1518.169472060372527, 654.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~[3]",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~[3]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"lastchannelcount" : 0,
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 1230.763341277709515, 658.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~[2]",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~[2]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"lastchannelcount" : 0,
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 1143.763341277709515, 658.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~[1]",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~[1]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"lastchannelcount" : 0,
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 1044.799469030218006, 654.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
@@ -244,7 +560,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1433.184490698894479, 329.0, 50.0, 22.0 ],
-									"text" : "3"
+									"text" : "0"
 								}
 
 							}
@@ -268,7 +584,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1281.252702683082134, 329.0, 50.0, 22.0 ],
-									"text" : "5"
+									"text" : "0"
 								}
 
 							}
@@ -292,7 +608,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1129.035711392760277, 329.0, 50.0, 22.0 ],
-									"text" : "6"
+									"text" : "0"
 								}
 
 							}
@@ -316,7 +632,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 924.035713106393814, 329.0, 50.0, 22.0 ],
-									"text" : "2"
+									"text" : "0"
 								}
 
 							}
@@ -340,7 +656,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 759.035713106393814, 329.0, 50.0, 22.0 ],
-									"text" : "5"
+									"text" : "0"
 								}
 
 							}
@@ -364,7 +680,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 593.035713106393814, 329.0, 50.0, 22.0 ],
-									"text" : "3"
+									"text" : "0"
 								}
 
 							}
@@ -388,7 +704,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 432.0, 329.0, 29.5, 22.0 ],
-									"text" : "6"
+									"text" : "0"
 								}
 
 							}
@@ -419,13 +735,25 @@
 , 							{
 								"box" : 								{
 									"basictuning" : 440,
-									"clipheight" : 28.714285714285715,
+									"clipheight" : 25.0,
 									"data" : 									{
 										"clips" : [ 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass\\Chitara_bass_1.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\edit nou 14.11\\chitara bass\\looperman-l-2921269-0345077-arp-synth-1.wav",
+												"filename" : "looperman-l-2921269-0345077-arp-synth-1.wav",
+												"filekind" : "audiofile",
+												"id" : "u011000531",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass\\Chitara_bass_1.wav",
 												"filename" : "Chitara_bass_1.wav",
 												"filekind" : "audiofile",
-												"id" : "u851000781",
+												"id" : "u767000549",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -434,10 +762,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass\\Chitara_bass_2.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass\\Chitara_bass_2.wav",
 												"filename" : "Chitara_bass_2.wav",
 												"filekind" : "audiofile",
-												"id" : "u085000782",
+												"id" : "u844000538",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -446,10 +774,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass\\Chitara_bass_3.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass\\Chitara_bass_3.wav",
 												"filename" : "Chitara_bass_3.wav",
 												"filekind" : "audiofile",
-												"id" : "u261000776",
+												"id" : "u984000746",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -458,10 +786,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass\\Chitara_bass_4.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass\\Chitara_bass_4.wav",
 												"filename" : "Chitara_bass_4.wav",
 												"filekind" : "audiofile",
-												"id" : "u576000777",
+												"id" : "u282000747",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -470,22 +798,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass\\Chitara_bass_5.wav",
-												"filename" : "Chitara_bass_5.wav",
-												"filekind" : "audiofile",
-												"id" : "u993000778",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass\\Chitara_bass_6.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass\\Chitara_bass_6.wav",
 												"filename" : "Chitara_bass_6.wav",
 												"filekind" : "audiofile",
-												"id" : "u252000779",
+												"id" : "u740000749",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -494,10 +810,22 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass\\Chitara_bass_7.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass\\Chitara_bass_7.wav",
 												"filename" : "Chitara_bass_7.wav",
 												"filekind" : "audiofile",
-												"id" : "u788000780",
+												"id" : "u993000750",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\edit nou 14.11\\chitara bass\\looperman-l-3395732-0343332-dance-prod-sconthetrack.wav",
+												"filename" : "looperman-l-3395732-0343332-dance-prod-sconthetrack.wav",
+												"filekind" : "audiofile",
+												"id" : "u355000530",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -519,7 +847,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1543.626917309333976, 447.0, 181.893616735935211, 208.0 ],
+									"patching_rect" : [ 1518.169472060372527, 435.0, 181.893616735935211, 208.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -534,8 +862,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1605.635714074969201, 132.854284896850572, 113.0, 36.0 ],
-									"text" : "if $i1 % 10 == 8 || $i1 == 0 then $i1"
+									"patching_rect" : [ 1605.635714074969201, 132.854284896850572, 117.0, 36.0 ],
+									"text" : "if $i1 / 10 == 8 || $i1 == 0 then $i1"
 								}
 
 							}
@@ -558,8 +886,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 1605.635714074969201, 212.95714274644854, 29.5, 22.0 ],
-									"text" : "/ 10"
+									"patching_rect" : [ 1605.635714074969201, 212.95714274644854, 36.0, 22.0 ],
+									"text" : "% 10"
 								}
 
 							}
@@ -569,82 +897,10 @@
 									"clipheight" : 25.0,
 									"data" : 									{
 										"clips" : [ 											{
-												"absolutepath" : "D:\\ITPMA\\Banat-in-banat\\stems\\voce\\Copilul de Aur  Laura Vass  Cine e inima mea (Original Video Hit).mp3vocals.wav",
-												"filename" : "Copilul de Aur  Laura Vass  Cine e inima mea (Original Video Hit).mp3vocals.wav",
-												"filekind" : "audiofile",
-												"id" : "u384000524",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\made in ro\\edit v2\\Ionut Cercel - Made in Romania [vocals].wav",
-												"filename" : "Ionut Cercel - Made in Romania [vocals].wav",
-												"filekind" : "audiofile",
-												"id" : "u423000528",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "D:\\ITPMA\\Banat-in-banat\\stems\\voce\\MIRELA SI MR JUVE  CINE TE CREZI.mp3vocals.wav",
-												"filename" : "MIRELA SI MR JUVE  CINE TE CREZI.mp3vocals.wav",
-												"filekind" : "audiofile",
-												"id" : "u998000518",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "D:\\ITPMA\\Banat-in-banat\\stems\\voce\\OZone  Dragostea Din Tei Official Video.mp3vocals.wav",
-												"filename" : "OZone  Dragostea Din Tei Official Video.mp3vocals.wav",
-												"filekind" : "audiofile",
-												"id" : "u069000519",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "D:\\ITPMA\\Banat-in-banat\\stems\\voce\\suna periculos.wav",
-												"filename" : "suna periculos.wav",
-												"filekind" : "audiofile",
-												"id" : "u354000520",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "D:\\ITPMA\\Banat-in-banat\\stems\\voce\\Adi de la Valcea LANGA CINELANGA TINE(OFFICIAL CLIP).mp3vocals.wav",
-												"filename" : "Adi de la Valcea LANGA CINELANGA TINE(OFFICIAL CLIP).mp3vocals.wav",
-												"filekind" : "audiofile",
-												"id" : "u389000521",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "D:\\ITPMA\\Banat-in-banat\\stems\\voce\\Alexandra Stan  Mr. Saxobeat (Official Video).mp3vocals.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\voce\\Alexandra Stan  Mr. Saxobeat (Official Video).mp3vocals.wav",
 												"filename" : "Alexandra Stan  Mr. Saxobeat (Official Video).mp3vocals.wav",
 												"filekind" : "audiofile",
-												"id" : "u227000522",
+												"id" : "u357000722",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -653,10 +909,82 @@
 
 											}
 , 											{
-												"absolutepath" : "D:\\ITPMA\\Banat-in-banat\\stems\\voce\\Andreea Balan  Oops... eroare.mp3vocals.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\voce\\Andreea Balan  Oops... eroare.mp3vocals.wav",
 												"filename" : "Andreea Balan  Oops... eroare.mp3vocals.wav",
 												"filekind" : "audiofile",
-												"id" : "u152000523",
+												"id" : "u239000716",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\voce\\Copilul de Aur  Laura Vass  Cine e inima mea (Original Video Hit).mp3vocals.wav",
+												"filename" : "Copilul de Aur  Laura Vass  Cine e inima mea (Original Video Hit).mp3vocals.wav",
+												"filekind" : "audiofile",
+												"id" : "u491000717",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\voce\\MIRELA SI MR JUVE  CINE TE CREZI.mp3vocals.wav",
+												"filename" : "MIRELA SI MR JUVE  CINE TE CREZI.mp3vocals.wav",
+												"filekind" : "audiofile",
+												"id" : "u872000718",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\voce\\OZone  Dragostea Din Tei Official Video.mp3vocals.wav",
+												"filename" : "OZone  Dragostea Din Tei Official Video.mp3vocals.wav",
+												"filekind" : "audiofile",
+												"id" : "u379000719",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\voce\\suna periculos.wav",
+												"filename" : "suna periculos.wav",
+												"filekind" : "audiofile",
+												"id" : "u615000720",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\made in ro\\edit v2\\Ionut Cercel - Made in Romania [vocals].wav",
+												"filename" : "Ionut Cercel - Made in Romania [vocals].wav",
+												"filekind" : "audiofile",
+												"id" : "u668000743",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\voce\\Adi de la Valcea LANGA CINELANGA TINE(OFFICIAL CLIP).mp3vocals.wav",
+												"filename" : "Adi de la Valcea LANGA CINELANGA TINE(OFFICIAL CLIP).mp3vocals.wav",
+												"filekind" : "audiofile",
+												"id" : "u588000721",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -678,7 +1006,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1391.695129293521859, 447.0, 142.0, 208.0 ],
+									"patching_rect" : [ 1330.184490698894479, 435.0, 142.0, 208.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -693,8 +1021,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1429.749996349215508, 133.0, 114.0, 36.0 ],
-									"text" : "if $i1 % 10 == 7 || $i1 == 0 then $i1"
+									"patching_rect" : [ 1429.749996349215508, 133.0, 144.0, 36.0 ],
+									"text" : "if $i1 / 10 == 7 || $i1 == 0 then $i1"
 								}
 
 							}
@@ -717,21 +1045,21 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 1429.749996349215508, 209.95714274644854, 29.5, 22.0 ],
-									"text" : "/ 10"
+									"patching_rect" : [ 1429.749996349215508, 209.95714274644854, 36.0, 22.0 ],
+									"text" : "% 10"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"basictuning" : 440,
-									"clipheight" : 28.714285714285715,
+									"clipheight" : 25.0,
 									"data" : 									{
 										"clips" : [ 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\vioara\\Vioara_1.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\vioara\\Vioara_1.wav",
 												"filename" : "Vioara_1.wav",
 												"filekind" : "audiofile",
-												"id" : "u184000726",
+												"id" : "u796000692",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -740,10 +1068,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\vioara\\Vioara_2.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\vioara\\Vioara_2.wav",
 												"filename" : "Vioara_2.wav",
 												"filekind" : "audiofile",
-												"id" : "u663000727",
+												"id" : "u366000693",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -752,10 +1080,22 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\vioara\\Vioara_3.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\edit nou 14.11\\violin\\looperman-l-0139050-0013094-dusthill-reggeaton-violin-loop-01.wav",
+												"filename" : "looperman-l-0139050-0013094-dusthill-reggeaton-violin-loop-01.wav",
+												"filekind" : "audiofile",
+												"id" : "u002000523",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\vioara\\Vioara_3.wav",
 												"filename" : "Vioara_3.wav",
 												"filekind" : "audiofile",
-												"id" : "u505000728",
+												"id" : "u682000694",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -764,10 +1104,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\vioara\\Vioara_4.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\vioara\\Vioara_4.wav",
 												"filename" : "Vioara_4.wav",
 												"filekind" : "audiofile",
-												"id" : "u738000722",
+												"id" : "u811000688",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -776,10 +1116,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\vioara\\Vioara_5.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\vioara\\Vioara_5.wav",
 												"filename" : "Vioara_5.wav",
 												"filekind" : "audiofile",
-												"id" : "u184000723",
+												"id" : "u432000689",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -788,10 +1128,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\vioara\\Vioara_6.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\vioara\\Vioara_6.wav",
 												"filename" : "Vioara_6.wav",
 												"filekind" : "audiofile",
-												"id" : "u912000724",
+												"id" : "u132000690",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -800,10 +1140,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\vioara\\Vioara_7.wav",
-												"filename" : "Vioara_7.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\edit nou 14.11\\violin\\looperman-l-5091060-0327710-the-bag-violin-loop-part-1.wav",
+												"filename" : "looperman-l-5091060-0327710-the-bag-violin-loop-part-1.wav",
 												"filekind" : "audiofile",
-												"id" : "u255000725",
+												"id" : "u839000522",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -825,7 +1165,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1239.763341277709515, 447.0, 142.0, 208.0 ],
+									"patching_rect" : [ 1153.252704396715671, 435.0, 142.0, 208.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -840,8 +1180,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1251.749996349215508, 137.854284896850572, 109.0, 36.0 ],
-									"text" : "if $i1 % 10 == 6 || $i1 == 0 then $i1"
+									"patching_rect" : [ 1251.749996349215508, 137.854284896850572, 144.0, 36.0 ],
+									"text" : "if $i1 / 10 == 6 || $i1 == 0 then $i1"
 								}
 
 							}
@@ -864,21 +1204,21 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 1251.635714074969201, 213.95714274644854, 29.5, 22.0 ],
-									"text" : "/ 10"
+									"patching_rect" : [ 1251.635714074969201, 213.95714274644854, 36.0, 22.0 ],
+									"text" : "% 10"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"basictuning" : 440,
-									"clipheight" : 28.714285714285715,
+									"clipheight" : 25.0,
 									"data" : 									{
 										"clips" : [ 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\clarinet\\Clarinet_1.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\clarinet\\Clarinet_1.wav",
 												"filename" : "Clarinet_1.wav",
 												"filekind" : "audiofile",
-												"id" : "u812000616",
+												"id" : "u299000664",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -887,10 +1227,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\clarinet\\Clarinet_2.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\clarinet\\Clarinet_2.wav",
 												"filename" : "Clarinet_2.wav",
 												"filekind" : "audiofile",
-												"id" : "u586000617",
+												"id" : "u034000665",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -899,10 +1239,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\clarinet\\Clarinet_3.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\clarinet\\Clarinet_3.wav",
 												"filename" : "Clarinet_3.wav",
 												"filekind" : "audiofile",
-												"id" : "u357000618",
+												"id" : "u646000666",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -911,10 +1251,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\clarinet\\Clarinet_4.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\clarinet\\Clarinet_4.wav",
 												"filename" : "Clarinet_4.wav",
 												"filekind" : "audiofile",
-												"id" : "u781000612",
+												"id" : "u975000660",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -923,10 +1263,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\clarinet\\Clarinet_5.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\clarinet\\Clarinet_5.wav",
 												"filename" : "Clarinet_5.wav",
 												"filekind" : "audiofile",
-												"id" : "u692000613",
+												"id" : "u528000661",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -935,10 +1275,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\clarinet\\Clarinet_6.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\clarinet\\Clarinet_6.wav",
 												"filename" : "Clarinet_6.wav",
 												"filekind" : "audiofile",
-												"id" : "u127000614",
+												"id" : "u074000662",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -947,10 +1287,22 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\clarinet\\Clarinet_7.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\clarinet\\Clarinet_7.wav",
 												"filename" : "Clarinet_7.wav",
 												"filekind" : "audiofile",
-												"id" : "u909000615",
+												"id" : "u933000663",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\edit nou 14.11\\carinet\\looperman-l-4168707-0293208-soes-hyperbola-part-2.wav",
+												"filename" : "looperman-l-4168707-0293208-soes-hyperbola-part-2.wav",
+												"filekind" : "audiofile",
+												"id" : "u793000519",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -972,7 +1324,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1087.831553261897398, 447.0, 142.0, 208.0 ],
+									"patching_rect" : [ 975.799469030218233, 435.0, 142.0, 208.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -987,8 +1339,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1083.635714074969201, 132.854284896850572, 114.0, 36.0 ],
-									"text" : "if $i1 % 10 == 5 || $i1 == 0 then $i1"
+									"patching_rect" : [ 1083.635714074969201, 132.854284896850572, 144.0, 36.0 ],
+									"text" : "if $i1 / 10 == 5 || $i1 == 0 then $i1"
 								}
 
 							}
@@ -1011,8 +1363,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 1083.635714074969201, 212.95714274644854, 29.5, 22.0 ],
-									"text" : "/ 10"
+									"patching_rect" : [ 1083.635714074969201, 212.95714274644854, 36.0, 22.0 ],
+									"text" : "% 10"
 								}
 
 							}
@@ -1022,10 +1374,10 @@
 									"clipheight" : 25.0,
 									"data" : 									{
 										"clips" : [ 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\acordeon\\acordeon_1.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\acordeon\\acordeon_1.wav",
 												"filename" : "acordeon_1.wav",
 												"filekind" : "audiofile",
-												"id" : "u482000557",
+												"id" : "u360000636",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1034,10 +1386,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\acordeon\\acordeon_2.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\acordeon\\acordeon_2.wav",
 												"filename" : "acordeon_2.wav",
 												"filekind" : "audiofile",
-												"id" : "u337000558",
+												"id" : "u847000637",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1046,10 +1398,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\acordeon\\acordeon_3.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\acordeon\\acordeon_3.wav",
 												"filename" : "acordeon_3.wav",
 												"filekind" : "audiofile",
-												"id" : "u314000559",
+												"id" : "u471000638",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1058,10 +1410,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\acordeon\\acordeon_4.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\acordeon\\acordeon_4.wav",
 												"filename" : "acordeon_4.wav",
 												"filekind" : "audiofile",
-												"id" : "u030000560",
+												"id" : "u517000639",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1070,10 +1422,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\made in ro\\edit v2\\Ionut Cercel - Made in Romania [music].wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\made in ro\\edit v2\\Ionut Cercel - Made in Romania [music].wav",
 												"filename" : "Ionut Cercel - Made in Romania [music].wav",
 												"filekind" : "audiofile",
-												"id" : "u888000525",
+												"id" : "u186000630",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1082,10 +1434,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\acordeon\\acordeon_5.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\acordeon\\acordeon_5.wav",
 												"filename" : "acordeon_5.wav",
 												"filekind" : "audiofile",
-												"id" : "u437000561",
+												"id" : "u347000633",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1094,10 +1446,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\acordeon\\acordeon_6.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\acordeon\\acordeon_6.wav",
 												"filename" : "acordeon_6.wav",
 												"filekind" : "audiofile",
-												"id" : "u360000562",
+												"id" : "u384000634",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1106,10 +1458,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\acordeon\\acordeon_7.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\acordeon\\acordeon_7.wav",
 												"filename" : "acordeon_7.wav",
 												"filekind" : "audiofile",
-												"id" : "u149000556",
+												"id" : "u264000635",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1131,7 +1483,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 914.867681014405662, 447.0, 142.0, 208.0 ],
+									"patching_rect" : [ 798.867681014405662, 435.0, 142.0, 208.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -1146,8 +1498,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 925.635714074969314, 132.854284896850572, 106.999999999999886, 36.0 ],
-									"text" : "if $i1 % 10 == 4 || $i1 == 0 then $i1"
+									"patching_rect" : [ 925.635714074969314, 132.854284896850572, 144.0, 36.0 ],
+									"text" : "if $i1 / 10 == 4 || $i1 == 0 then $i1"
 								}
 
 							}
@@ -1170,8 +1522,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 925.635714074969314, 212.95714274644854, 29.5, 22.0 ],
-									"text" : "/ 10"
+									"patching_rect" : [ 925.635714074969314, 212.95714274644854, 36.0, 22.0 ],
+									"text" : "% 10"
 								}
 
 							}
@@ -1183,8 +1535,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 759.035711392760277, 132.854284896850572, 115.0, 36.0 ],
-									"text" : "if $i1 % 10 == 3 || $i1 == 0 then $i1"
+									"patching_rect" : [ 759.035711392760277, 132.854284896850572, 144.0, 36.0 ],
+									"text" : "if $i1 / 10 == 3 || $i1 == 0 then $i1"
 								}
 
 							}
@@ -1207,21 +1559,21 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 759.035711392760277, 212.95714274644854, 29.5, 22.0 ],
-									"text" : "/ 10"
+									"patching_rect" : [ 759.035711392760277, 212.95714274644854, 36.0, 22.0 ],
+									"text" : "% 10"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"basictuning" : 440,
-									"clipheight" : 28.714285714285715,
+									"clipheight" : 25.0,
 									"data" : 									{
 										"clips" : [ 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\chitara\\Chitara_1.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\chitara\\Chitara_1.wav",
 												"filename" : "Chitara_1.wav",
 												"filekind" : "audiofile",
-												"id" : "u494000501",
+												"id" : "u827000606",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1230,10 +1582,22 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\chitara\\Chitara_2.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\edit nou 14.11\\Ionut Cercel - Made in Romania [music]-guitar.wav",
+												"filename" : "Ionut Cercel - Made in Romania [music]-guitar.wav",
+												"filekind" : "audiofile",
+												"id" : "u304000512",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\chitara\\Chitara_2.wav",
 												"filename" : "Chitara_2.wav",
 												"filekind" : "audiofile",
-												"id" : "u429000502",
+												"id" : "u828000607",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1242,10 +1606,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\chitara\\Chitara_3.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\chitara\\Chitara_3.wav",
 												"filename" : "Chitara_3.wav",
 												"filekind" : "audiofile",
-												"id" : "u038000503",
+												"id" : "u537000608",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1254,10 +1618,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\chitara\\Chitara_4.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\chitara\\Chitara_4.wav",
 												"filename" : "Chitara_4.wav",
 												"filekind" : "audiofile",
-												"id" : "u086000504",
+												"id" : "u394000602",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1266,10 +1630,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\chitara\\Chitara_5.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\chitara\\Chitara_5.wav",
 												"filename" : "Chitara_5.wav",
 												"filekind" : "audiofile",
-												"id" : "u225000505",
+												"id" : "u444000603",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1278,10 +1642,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\chitara\\Chitara_6.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\chitara\\Chitara_6.wav",
 												"filename" : "Chitara_6.wav",
 												"filekind" : "audiofile",
-												"id" : "u369000499",
+												"id" : "u092000604",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1290,10 +1654,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\chitara\\Chitara_7.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\chitara\\Chitara_7.wav",
 												"filename" : "Chitara_7.wav",
 												"filekind" : "audiofile",
-												"id" : "u151000500",
+												"id" : "u570000605",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1315,7 +1679,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 754.09311188421043, 447.0, 151.0, 208.0 ],
+									"patching_rect" : [ 638.09311188421043, 435.0, 151.0, 208.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -1330,8 +1694,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 593.035711392760277, 130.854284896850572, 109.0, 36.0 ],
-									"text" : "if $i1 % 10 == 2 || $i1 == 0 then $i1"
+									"patching_rect" : [ 593.035711392760277, 130.854284896850572, 144.0, 36.0 ],
+									"text" : "if $i1 / 10 == 2 || $i1 == 0 then $i1"
 								}
 
 							}
@@ -1354,21 +1718,21 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 593.035711392760277, 210.95714274644854, 29.5, 22.0 ],
-									"text" : "/ 10"
+									"patching_rect" : [ 593.035711392760277, 210.95714274644854, 36.0, 22.0 ],
+									"text" : "% 10"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"basictuning" : 440,
-									"clipheight" : 28.714285714285715,
+									"clipheight" : 25.0,
 									"data" : 									{
 										"clips" : [ 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass lorena\\Bass_1.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass lorena\\Bass_1.wav",
 												"filename" : "Bass_1.wav",
 												"filekind" : "audiofile",
-												"id" : "u412000452",
+												"id" : "u950000596",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1377,10 +1741,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass lorena\\Bass_2.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass lorena\\Bass_2.wav",
 												"filename" : "Bass_2.wav",
 												"filekind" : "audiofile",
-												"id" : "u587000447",
+												"id" : "u433000599",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1389,10 +1753,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass lorena\\Bass_3.wav",
-												"filename" : "Bass_3.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\edit nou 14.11\\bass\\looperman-l-0438262-0039891-sakzfifthswag-bamm-bass.wav",
+												"filename" : "looperman-l-0438262-0039891-sakzfifthswag-bamm-bass.wav",
 												"filekind" : "audiofile",
-												"id" : "u448000448",
+												"id" : "u068000506",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1401,46 +1765,58 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass lorena\\Bass_4.wav",
-												"filename" : "Bass_4.wav",
-												"filekind" : "audiofile",
-												"id" : "u221000449",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass lorena\\Bass_5.wav",
-												"filename" : "Bass_5.wav",
-												"filekind" : "audiofile",
-												"id" : "u734000450",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\bass lorena\\Bass_6.wav",
-												"filename" : "Bass_6.wav",
-												"filekind" : "audiofile",
-												"id" : "u163000451",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\made in ro\\edit v2\\Ionut Cercel - Made in Romania [bass].wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\made in ro\\edit v2\\Ionut Cercel - Made in Romania [bass].wav",
 												"filename" : "Ionut Cercel - Made in Romania [bass].wav",
 												"filekind" : "audiofile",
-												"id" : "u119000522",
+												"id" : "u494000564",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass lorena\\Bass_4.wav",
+												"filename" : "Bass_4.wav",
+												"filekind" : "audiofile",
+												"id" : "u820000568",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\edit nou 14.11\\bass\\looperman-l-1214969-0075229-massive2014edm-bass-sidechained.wav",
+												"filename" : "looperman-l-1214969-0075229-massive2014edm-bass-sidechained.wav",
+												"filekind" : "audiofile",
+												"id" : "u200000507",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\bass lorena\\Bass_6.wav",
+												"filename" : "Bass_6.wav",
+												"filekind" : "audiofile",
+												"id" : "u375000570",
+												"selection" : [ 0.0, 1.0 ],
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\edit nou 14.11\\bass\\looperman-l-4429595-0267197-drill-808-8.wav",
+												"filename" : "looperman-l-4429595-0267197-drill-808-8.wav",
+												"filekind" : "audiofile",
+												"id" : "u746000505",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1462,7 +1838,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 593.318542754015425, 447.0, 151.0, 208.0 ],
+									"patching_rect" : [ 478.035711392760277, 435.0, 151.0, 208.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -1477,8 +1853,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 430.999998286366463, 130.854284896850572, 111.0, 36.0 ],
-									"text" : "if $i1 % 10 == 1 || $i1 == 0 then $i1"
+									"patching_rect" : [ 430.999998286366463, 130.854284896850572, 119.0, 36.0 ],
+									"text" : "if $i1 / 10 == 1 || $i1 == 0 then $i1"
 								}
 
 							}
@@ -1501,8 +1877,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 431.999998286366463, 210.95714274644854, 29.5, 22.0 ],
-									"text" : "/ 10"
+									"patching_rect" : [ 431.999998286366463, 210.95714274644854, 36.0, 22.0 ],
+									"text" : "% 10"
 								}
 
 							}
@@ -1512,7 +1888,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1066.799469030218006, 727.412519565810385, 51.0, 51.0 ]
+									"patching_rect" : [ 1087.799469030218006, 937.412519565810385, 51.0, 51.0 ]
 								}
 
 							}
@@ -1522,10 +1898,10 @@
 									"clipheight" : 25.0,
 									"data" : 									{
 										"clips" : [ 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\tobe lorena\\Tobe_1.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\tobe lorena\\Tobe_1.wav",
 												"filename" : "Tobe_1.wav",
 												"filekind" : "audiofile",
-												"id" : "u765000513",
+												"id" : "u561000534",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1534,10 +1910,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\tobe lorena\\Tobe_2.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\tobe lorena\\Tobe_2.wav",
 												"filename" : "Tobe_2.wav",
 												"filekind" : "audiofile",
-												"id" : "u972000420",
+												"id" : "u356000535",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1546,10 +1922,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\tobe lorena\\Tobe_3.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\tobe lorena\\Tobe_3.wav",
 												"filename" : "Tobe_3.wav",
 												"filekind" : "audiofile",
-												"id" : "u889000516",
+												"id" : "u898000536",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1558,10 +1934,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\tobe lorena\\Tobe_4.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\tobe lorena\\Tobe_4.wav",
 												"filename" : "Tobe_4.wav",
 												"filekind" : "audiofile",
-												"id" : "u963000422",
+												"id" : "u016000537",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1570,10 +1946,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\tobe lorena\\Tobe_5.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\tobe lorena\\Tobe_5.wav",
 												"filename" : "Tobe_5.wav",
 												"filekind" : "audiofile",
-												"id" : "u520000416",
+												"id" : "u484000538",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1582,10 +1958,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\made in ro\\edit v2\\Ionut Cercel - Made in Romania [drums].wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\made in ro\\edit v2\\Ionut Cercel - Made in Romania [drums].wav",
 												"filename" : "Ionut Cercel - Made in Romania [drums].wav",
 												"filekind" : "audiofile",
-												"id" : "u791000519",
+												"id" : "u280000559",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1594,10 +1970,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\tobe lorena\\Tobe_6.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\tobe lorena\\Tobe_6.wav",
 												"filename" : "Tobe_6.wav",
 												"filekind" : "audiofile",
-												"id" : "u991000417",
+												"id" : "u061000532",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1606,10 +1982,10 @@
 
 											}
 , 											{
-												"absolutepath" : "C:\\Users\\Install\\Downloads\\stems\\tobe lorena\\Tobe_7.wav",
+												"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\tobe lorena\\Tobe_7.wav",
 												"filename" : "Tobe_7.wav",
 												"filekind" : "audiofile",
-												"id" : "u354000418",
+												"id" : "u935000533",
 												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
@@ -1631,7 +2007,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 430.999998286366463, 447.0, 152.571426212787628, 208.0 ],
+									"patching_rect" : [ 314.999998286366463, 435.0, 152.571426212787628, 208.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -1668,14 +2044,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 1 ],
+									"destination" : [ "obj-40", 1 ],
 									"source" : [ "obj-11", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 0 ],
+									"destination" : [ "obj-40", 0 ],
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -1754,6 +2130,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
 									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 1 ],
+									"source" : [ "obj-22", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"source" : [ "obj-22", 0 ]
 								}
 
 							}
@@ -1886,14 +2276,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 1 ],
+									"destination" : [ "obj-38", 1 ],
 									"source" : [ "obj-32", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 0 ],
+									"destination" : [ "obj-38", 0 ],
 									"source" : [ "obj-32", 0 ]
 								}
 
@@ -1928,8 +2318,64 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-69", 1 ],
+									"source" : [ "obj-37", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"source" : [ "obj-37", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 1 ],
+									"source" : [ "obj-38", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-42", 0 ],
 									"source" : [ "obj-39", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 1 ],
+									"source" : [ "obj-40", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 1 ],
+									"source" : [ "obj-41", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"source" : [ "obj-41", 0 ]
 								}
 
 							}
@@ -1942,14 +2388,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 1 ],
+									"destination" : [ "obj-37", 1 ],
 									"source" : [ "obj-48", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 0 ],
+									"destination" : [ "obj-37", 0 ],
 									"source" : [ "obj-48", 0 ]
 								}
 
@@ -1957,27 +2403,41 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-69", 1 ],
+									"source" : [ "obj-5", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 1 ],
 									"source" : [ "obj-50", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 0 ],
+									"destination" : [ "obj-41", 0 ],
 									"source" : [ "obj-50", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 1 ],
+									"destination" : [ "obj-5", 1 ],
 									"source" : [ "obj-51", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 0 ],
+									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-51", 0 ]
 								}
 
@@ -2005,14 +2465,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 1 ],
+									"destination" : [ "obj-7", 1 ],
 									"source" : [ "obj-57", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 0 ],
+									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-57", 0 ]
 								}
 
@@ -2047,14 +2507,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 1 ],
+									"destination" : [ "obj-8", 1 ],
 									"source" : [ "obj-66", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 0 ],
+									"destination" : [ "obj-8", 0 ],
 									"source" : [ "obj-66", 0 ]
 								}
 
@@ -2075,6 +2535,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-69", 1 ],
+									"source" : [ "obj-7", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-33", 1 ],
 									"source" : [ "obj-71", 0 ]
 								}
@@ -2082,14 +2556,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 1 ],
+									"destination" : [ "obj-22", 1 ],
 									"source" : [ "obj-72", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 0 ],
+									"destination" : [ "obj-22", 0 ],
 									"source" : [ "obj-72", 0 ]
 								}
 
@@ -2112,6 +2586,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-30", 1 ],
 									"source" : [ "obj-76", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 1 ],
+									"source" : [ "obj-8", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -2189,7 +2677,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 407.999997317790985, 218.5, 73.0, 22.0 ],
+					"patching_rect" : [ 407.999997317790985, 327.5, 73.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2218,7 +2706,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 42.0, 85.0, 1852.0, 921.0 ],
+						"rect" : [ 43.0, 233.0, 1452.0, 689.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2504,7 +2992,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 534.749997317790871, 172.208569793701145, 84.0, 22.0 ],
+					"patching_rect" : [ 534.749997317790871, 281.208569793701145, 84.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2536,7 +3024,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 327.535715043544769, 261.0, 50.0, 22.0 ]
+					"patching_rect" : [ 327.535715043544769, 370.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -2546,10 +3034,10 @@
 					"clipheight" : 29.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "C:\\Users\\Install\\Downloads\\Ionut Cercel - Made in Romania.mp3",
-								"filename" : "Ionut Cercel - Made in Romania.mp3",
+								"absolutepath" : "C:\\Users\\Biblioteca\\Desktop\\Banat in banat\\Banat-in-banat\\stems\\made in ro scurt.wav",
+								"filename" : "made in ro scurt.wav",
 								"filekind" : "audiofile",
-								"id" : "u769000489",
+								"id" : "u913000559",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
@@ -2585,20 +3073,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 407.999997317790985, 172.208569793701145, 62.0, 22.0 ],
+					"patching_rect" : [ 407.999997317790985, 281.208569793701145, 62.0, 22.0 ],
 					"text" : "route loop"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 570.749997317790985, 68.0, 48.0, 22.0 ],
-					"text" : "change"
 				}
 
 			}
@@ -2609,7 +3085,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 570.749997317790985, 30.5, 41.0, 22.0 ],
+					"patching_rect" : [ 560.749997317790985, 11.5, 41.0, 22.0 ],
 					"text" : "notein"
 				}
 
@@ -2703,7 +3179,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 6,
 					"outlettype" : [ "", "", "", "", "", "" ],
-					"patching_rect" : [ 353.749997317790985, 112.535714209079742, 236.0, 22.0 ],
+					"patching_rect" : [ 353.749997317790985, 220.535714209079742, 236.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "play.js",
 						"parameter_enable" : 0
@@ -2751,13 +3227,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-49", 1 ],
-					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -2840,7 +3309,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 1 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -2871,6 +3347,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-62", 0 ]
 				}
@@ -2890,425 +3380,96 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"source" : [ "obj-71", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 0 ],
+					"source" : [ "obj-74", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 1 ],
+					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-79", 0 ],
+					"source" : [ "obj-76", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 1 ],
+					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 3 ],
+					"source" : [ "obj-80", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"source" : [ "obj-80", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 3 ],
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
  ],
+		"parameters" : 		{
+			"obj-98::obj-22" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-98::obj-37" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-98::obj-38" : [ "live.gain~[5]", "live.gain~", 0 ],
+			"obj-98::obj-40" : [ "live.gain~[6]", "live.gain~", 0 ],
+			"obj-98::obj-41" : [ "live.gain~[7]", "live.gain~", 0 ],
+			"obj-98::obj-5" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-98::obj-7" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-98::obj-8" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
-				"name" : "Adi de la Valcea LANGA CINELANGA TINE(OFFICIAL CLIP).mp3vocals.wav",
-				"bootpath" : "D:/ITPMA/Banat-in-banat/stems/voce",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Alexandra Stan  Mr. Saxobeat (Official Video).mp3vocals.wav",
-				"bootpath" : "D:/ITPMA/Banat-in-banat/stems/voce",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Andreea Balan  Oops... eroare.mp3vocals.wav",
-				"bootpath" : "D:/ITPMA/Banat-in-banat/stems/voce",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Bass_1.wav",
-				"bootpath" : "~/Downloads/stems/bass lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/bass lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Bass_2.wav",
-				"bootpath" : "~/Downloads/stems/bass lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/bass lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Bass_3.wav",
-				"bootpath" : "~/Downloads/stems/bass lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/bass lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Bass_4.wav",
-				"bootpath" : "~/Downloads/stems/bass lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/bass lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Bass_5.wav",
-				"bootpath" : "~/Downloads/stems/bass lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/bass lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Bass_6.wav",
-				"bootpath" : "~/Downloads/stems/bass lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/bass lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_1.wav",
-				"bootpath" : "~/Downloads/stems/chitara",
-				"patcherrelativepath" : "../../../Downloads/stems/chitara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_2.wav",
-				"bootpath" : "~/Downloads/stems/chitara",
-				"patcherrelativepath" : "../../../Downloads/stems/chitara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_3.wav",
-				"bootpath" : "~/Downloads/stems/chitara",
-				"patcherrelativepath" : "../../../Downloads/stems/chitara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_4.wav",
-				"bootpath" : "~/Downloads/stems/chitara",
-				"patcherrelativepath" : "../../../Downloads/stems/chitara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_5.wav",
-				"bootpath" : "~/Downloads/stems/chitara",
-				"patcherrelativepath" : "../../../Downloads/stems/chitara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_6.wav",
-				"bootpath" : "~/Downloads/stems/chitara",
-				"patcherrelativepath" : "../../../Downloads/stems/chitara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_7.wav",
-				"bootpath" : "~/Downloads/stems/chitara",
-				"patcherrelativepath" : "../../../Downloads/stems/chitara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_bass_1.wav",
-				"bootpath" : "~/Downloads/stems/bass",
-				"patcherrelativepath" : "../../../Downloads/stems/bass",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_bass_2.wav",
-				"bootpath" : "~/Downloads/stems/bass",
-				"patcherrelativepath" : "../../../Downloads/stems/bass",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_bass_3.wav",
-				"bootpath" : "~/Downloads/stems/bass",
-				"patcherrelativepath" : "../../../Downloads/stems/bass",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_bass_4.wav",
-				"bootpath" : "~/Downloads/stems/bass",
-				"patcherrelativepath" : "../../../Downloads/stems/bass",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_bass_5.wav",
-				"bootpath" : "~/Downloads/stems/bass",
-				"patcherrelativepath" : "../../../Downloads/stems/bass",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_bass_6.wav",
-				"bootpath" : "~/Downloads/stems/bass",
-				"patcherrelativepath" : "../../../Downloads/stems/bass",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Chitara_bass_7.wav",
-				"bootpath" : "~/Downloads/stems/bass",
-				"patcherrelativepath" : "../../../Downloads/stems/bass",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Clarinet_1.wav",
-				"bootpath" : "~/Downloads/stems/clarinet",
-				"patcherrelativepath" : "../../../Downloads/stems/clarinet",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Clarinet_2.wav",
-				"bootpath" : "~/Downloads/stems/clarinet",
-				"patcherrelativepath" : "../../../Downloads/stems/clarinet",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Clarinet_3.wav",
-				"bootpath" : "~/Downloads/stems/clarinet",
-				"patcherrelativepath" : "../../../Downloads/stems/clarinet",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Clarinet_4.wav",
-				"bootpath" : "~/Downloads/stems/clarinet",
-				"patcherrelativepath" : "../../../Downloads/stems/clarinet",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Clarinet_5.wav",
-				"bootpath" : "~/Downloads/stems/clarinet",
-				"patcherrelativepath" : "../../../Downloads/stems/clarinet",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Clarinet_6.wav",
-				"bootpath" : "~/Downloads/stems/clarinet",
-				"patcherrelativepath" : "../../../Downloads/stems/clarinet",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Clarinet_7.wav",
-				"bootpath" : "~/Downloads/stems/clarinet",
-				"patcherrelativepath" : "../../../Downloads/stems/clarinet",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Copilul de Aur  Laura Vass  Cine e inima mea (Original Video Hit).mp3vocals.wav",
-				"bootpath" : "D:/ITPMA/Banat-in-banat/stems/voce",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Ionut Cercel - Made in Romania [bass].wav",
-				"bootpath" : "~/Downloads/stems/made in ro/edit v2",
-				"patcherrelativepath" : "../../../Downloads/stems/made in ro/edit v2",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Ionut Cercel - Made in Romania [drums].wav",
-				"bootpath" : "~/Downloads/stems/made in ro/edit v2",
-				"patcherrelativepath" : "../../../Downloads/stems/made in ro/edit v2",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Ionut Cercel - Made in Romania [music].wav",
-				"bootpath" : "~/Downloads/stems/made in ro/edit v2",
-				"patcherrelativepath" : "../../../Downloads/stems/made in ro/edit v2",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Ionut Cercel - Made in Romania [vocals].wav",
-				"bootpath" : "~/Downloads/stems/made in ro/edit v2",
-				"patcherrelativepath" : "../../../Downloads/stems/made in ro/edit v2",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Ionut Cercel - Made in Romania.mp3",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../Downloads",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MIRELA SI MR JUVE  CINE TE CREZI.mp3vocals.wav",
-				"bootpath" : "D:/ITPMA/Banat-in-banat/stems/voce",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OZone  Dragostea Din Tei Official Video.mp3vocals.wav",
-				"bootpath" : "D:/ITPMA/Banat-in-banat/stems/voce",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Tobe_1.wav",
-				"bootpath" : "~/Downloads/stems/tobe lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/tobe lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Tobe_2.wav",
-				"bootpath" : "~/Downloads/stems/tobe lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/tobe lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Tobe_3.wav",
-				"bootpath" : "~/Downloads/stems/tobe lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/tobe lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Tobe_4.wav",
-				"bootpath" : "~/Downloads/stems/tobe lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/tobe lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Tobe_5.wav",
-				"bootpath" : "~/Downloads/stems/tobe lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/tobe lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Tobe_6.wav",
-				"bootpath" : "~/Downloads/stems/tobe lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/tobe lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Tobe_7.wav",
-				"bootpath" : "~/Downloads/stems/tobe lorena",
-				"patcherrelativepath" : "../../../Downloads/stems/tobe lorena",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Vioara_1.wav",
-				"bootpath" : "~/Downloads/stems/vioara",
-				"patcherrelativepath" : "../../../Downloads/stems/vioara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Vioara_2.wav",
-				"bootpath" : "~/Downloads/stems/vioara",
-				"patcherrelativepath" : "../../../Downloads/stems/vioara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Vioara_3.wav",
-				"bootpath" : "~/Downloads/stems/vioara",
-				"patcherrelativepath" : "../../../Downloads/stems/vioara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Vioara_4.wav",
-				"bootpath" : "~/Downloads/stems/vioara",
-				"patcherrelativepath" : "../../../Downloads/stems/vioara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Vioara_5.wav",
-				"bootpath" : "~/Downloads/stems/vioara",
-				"patcherrelativepath" : "../../../Downloads/stems/vioara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Vioara_6.wav",
-				"bootpath" : "~/Downloads/stems/vioara",
-				"patcherrelativepath" : "../../../Downloads/stems/vioara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Vioara_7.wav",
-				"bootpath" : "~/Downloads/stems/vioara",
-				"patcherrelativepath" : "../../../Downloads/stems/vioara",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "acordeon_1.wav",
-				"bootpath" : "~/Downloads/stems/acordeon",
-				"patcherrelativepath" : "../../../Downloads/stems/acordeon",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "acordeon_2.wav",
-				"bootpath" : "~/Downloads/stems/acordeon",
-				"patcherrelativepath" : "../../../Downloads/stems/acordeon",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "acordeon_3.wav",
-				"bootpath" : "~/Downloads/stems/acordeon",
-				"patcherrelativepath" : "../../../Downloads/stems/acordeon",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "acordeon_4.wav",
-				"bootpath" : "~/Downloads/stems/acordeon",
-				"patcherrelativepath" : "../../../Downloads/stems/acordeon",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "acordeon_5.wav",
-				"bootpath" : "~/Downloads/stems/acordeon",
-				"patcherrelativepath" : "../../../Downloads/stems/acordeon",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "acordeon_6.wav",
-				"bootpath" : "~/Downloads/stems/acordeon",
-				"patcherrelativepath" : "../../../Downloads/stems/acordeon",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "acordeon_7.wav",
-				"bootpath" : "~/Downloads/stems/acordeon",
-				"patcherrelativepath" : "../../../Downloads/stems/acordeon",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "play.js",
-				"bootpath" : "~/Documents/Max 8/Library",
+				"bootpath" : "D:/ITPMA/Banat-in-banat/Banat in banat-the good-one/Banat in banat/Banat-in-banat/code",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "suna periculos.wav",
-				"bootpath" : "D:/ITPMA/Banat-in-banat/stems/voce",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],
